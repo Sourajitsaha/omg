@@ -1,0 +1,15 @@
+class mora{
+    public static void main(String Args[]){
+        int j;
+        for(int i=1;i<=5;i++){
+        for( j=5;j>=i+1;j--){
+                System.out.print(" ");
+            }
+            for(int k=j;k>=1;k--){
+            System.out.print("#");
+        }
+        System.out.println();
+        }
+    }
+}
+ 
