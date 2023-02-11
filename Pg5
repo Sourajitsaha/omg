@@ -1,0 +1,24 @@
+import java.util.*;
+class joke{
+    public static void main(String Args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the principal,rate,time: ");
+                double pince=sc.nextDouble();
+                double rate=sc.nextDouble();
+                double time=sc.nextDouble();
+        System.out.println("Enter your choice: ");
+        System.out.println("Press 1 for simple interest or 2 for compound interest");
+        int ch=sc.nextInt();
+        switch(ch){
+            case 1:
+                double si=pince*rate/100*time;
+                System.out.println(si);
+                break;
+            case 2:
+                double g=1+(rate/100);
+                double ci=pince*Math.pow(g,time);
+                System.out.println(ci);
+                break;
+        }
+    }
+}
